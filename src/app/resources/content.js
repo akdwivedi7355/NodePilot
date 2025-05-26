@@ -35,7 +35,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/akdwivedi7355",
+    link: "https://www.linkedin.com/in/akdwivedi7355/",
   },
   {
     name: "X",
@@ -101,9 +101,9 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Multifacet Software Solutions",
+        timeframe: "April 2024 - Present",
+        role: "Software Developer Engineer",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -124,22 +124,6 @@ const about = {
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
     ],
   },
   studies: {
@@ -147,12 +131,12 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Pranveer Singh Institute of Technology ",
+        description: <>Master of Computer Application</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Dayanand Anglo Vedic College, Kanpur",
+        description: <>Bachelor of Science</>,
       },
     ],
   },
