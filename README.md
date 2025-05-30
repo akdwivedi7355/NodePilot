@@ -1,94 +1,88 @@
-# **Magic Portfolio by Once UI**
+# Aditya Kumar Dwivedi – Portfolio
 
-View the [demo here](https://demo.magic-portfolio.com).
+👨‍💻 **Software Developer | Full-Stack Engineer | Native App Specialist**
 
-![Magic Portfolio](https://demo.magic-portfolio.com/images/og/home.jpg)
+📞 7355923271  
+📧 akdwivedi7355@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/akdwivedi7355) • [GitHub](https://github.com/akdwivedi7355) • [Portfolio Website](https://akdwivedi7355.github.io/port/index.html)
 
+---
 
-# **Getting started**
+## 👨‍💼 Summary
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+Versatile and detail-oriented software developer with expertise in **Node.js**, **React.js**, **React Native**, and **MongoDB**. Proven experience in building secure, scalable, and real-time web and mobile applications. Strong knowledge of cross-platform development, system design, and agile collaboration.
 
-**1. Clone the repository**
-```
-git clone https://github.com/once-ui-system/magic-portfolio.git
-```
+---
 
-**2. Install dependencies**
-```
-npm install
-```
+## 💼 Experience
 
-**3. Run dev server**
-```
-npm run dev
-```
+### 🔹 MULTIFACET SOFTWARE SYSTEMS PRIVATE LIMITED  
+**Software Developer** (Jul 2024 – Present)  
+**Kanpur, India**
+- Engineered scalable back-end services using Node.js and Express.js.
+- Built cross-platform native applications with advanced system integration.
+- Designed secure database schemas in MSSQL/MySQL.
+- Delivered full-stack MERN-based solutions including real-time camera monitoring.
 
-**4. Edit config**
-```
-src/app/resources/config
-```
+### 🔹 MULTIFACET SOFTWARE SYSTEMS PRIVATE LIMITED  
+**Software Development Intern** (Apr 2024 – Jun 2024)  
+- Assisted in developing modules using Node.js and React Native.
+- Contributed to Firebase and MongoDB integrations.
+- Participated in agile workflows and contributed to API testing/documentation.
 
-**5. Edit content**
-```
-src/app/resources/content
-```
+---
 
-**6. Create blog posts / projects**
-```
-Add a new .mdx file to src/app/blog/posts or src/app/work/projects
-```
+## 🎓 Education
 
-# **Documentation**
+### 🎓 Pranveer Singh Institute of Technology, Kanpur  
+**MCA** – June 2024  
+- Key Focus: Data Structures, Machine Learning, Web & Mobile Development
 
-Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
+### 🎓 Dayanand Anglo Vaidik (DAV) College, Kanpur  
+**B.Sc** – June 2022  
+- Key Focus: Digital Systems, Physics, Quantum Mechanics
 
-# **Features**
+---
 
-## **Once UI**
-- All tokens, components & features of [Once UI](https://once-ui.com)
+## 💻 Projects
 
-## **SEO**
-- Automatic open-graph and X image generation with next/og
-- Automatic schema and metadata generation based on the content file
+| Project | Description | Link |
+|--------|-------------|------|
+| **Library Management System** | Node.js backend with Android native app for CSJM University | [csjmulibrary.mssplonline.com](https://csjmulibrary.mssplonline.com) |
+| **Kiosk Automation Platform** | Automated book return/issue via barcode scanner | [kisokcsjm.mssplonline.com](https://kisokcsjm.mssplonline.com) |
+| **Face Attendance HRM** | React Native + Node.js with face recognition | [ehrm.mssplonline.com](https://ehrm.mssplonline.com) |
+| **Hospital Management System** | Native doctor app, billing modules in Node.js | [eiehr.mssplonline.com](https://eiehr.mssplonline.com) |
+| **Panchsala DMS** | Native + React.js platform for document digitization | [panchsala.mssplonline.com](https://panchsala.mssplonline.com) |
+| **Adhyatmik E-Commerce** | Bookstore with Node.js backend & native storefront | [adhyatmik.mssplonline.com](https://adhyatmik.mssplonline.com) |
+| **Spiritual Library UI** | Digital reading interface for spiritual content | [adhyatmiclibraryui.mssplonline.com](https://adhyatmiclibraryui.mssplonline.com) |
+| **Asset Management System** | Native app for tracking and inventory with MSSQL | [assetmanagement.mssplonline.com](https://assetmanagement.mssplonline.com) |
 
-## **Design**
-- Responsive layout optimized for all screen sizes
-- Timeless design without heavy animations and motion
-- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
+---
 
-## **Content**
-- Render sections conditionally based on the content file
-- Enable or disable pages for blog, work, gallery and about / CV
-- Generate and display social links automatically
-- Set up password protection for URLs
+## 🧠 Skills
 
-## **Localization**
-- A localized version of Magic Portfolio is available with the next-intl library
-- To use localization, switch to the 'i18n' branch
+**Languages:** JavaScript, TypeScript, Python  
+**Frontend:** React.js, HTML5, CSS3, Tailwind, MUI  
+**Mobile:** React Native, Expo, Native Android  
+**Backend:** Node.js, Express.js, REST APIs  
+**Databases:** MongoDB, MSSQL, MySQL, Firebase  
+**Tools:** Git, CI/CD, Postman, Agile, FaceAPI  
 
-# **Authors**
+---
 
-Connect with us on Threads or LinkedIn.
+## 📜 Certifications
 
-Lorant Toth: [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
-Zsofia Komaromi: [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
+- **Data Structures** – Coursera (UC San Diego)  
+- **SQL for Data Science** – Coursera (UC Davis)  
+- **Programming Fundamentals** – Coursera (Duke University)  
+- **Google Analytics** – Google Academy  
 
-Localization added by [François Hernandez](https://github.com/francoishernandez)
+---
 
-# **Get involved**
+## 📢 Contact
 
-- Join the [Design Engineers Club on Discord](https://discord.com/invite/5EyAQ4eNdS) and share your portfolio with us!
-- Report a [bug](https://github.com/once-ui-system/magic-portfolio/issues/new?labels=bug&template=bug_report.md).
+Feel free to reach out via email or connect on LinkedIn for collaborations, freelance opportunities, or full-time roles.
 
-# **License**
+---
 
-Distributed under the CC BY-NC 4.0 License.
-- Commercial usage is not allowed.
-- Attribution is required.
-- You can extend the license to commercial use by purchasing a [Once UI Pro](https://once-ui.com/pricing) license.
-
-See `LICENSE.txt` for more information.
-
-# **Deploy with Vercel**
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)
+_This portfolio is part of a custom-built professional identity system tailored for recruiters and tech organizations._
