@@ -1,8 +1,9 @@
 import { Column } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
-import { about, person, work } from "@/app/resources/content";
+import { about, newsletter, person, work } from "@/app/resources/content";
 import { Meta, Schema } from "@/once-ui/modules";
 import { Projects } from "@/components/work/Projects";
+import { Mailchimp } from "@/components";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -32,6 +33,8 @@ export default function Work() {
         }}
       />
       <Projects />
+
+      {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>
   );
 }
