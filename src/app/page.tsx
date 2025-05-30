@@ -8,7 +8,7 @@ import { home, about, person, newsletter } from "@/app/resources/content";
 import { Mailchimp } from "@/components";
 import { Posts } from "@/components/blog/Posts";
 import { Meta, Schema } from "@/once-ui/modules";
-import { SpacingToken } from "@/once-ui/types";
+import { opacity, SpacingToken } from "@/once-ui/types";
 
 
 export async function generateMetadata() {

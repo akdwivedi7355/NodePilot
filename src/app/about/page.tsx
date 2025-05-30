@@ -17,6 +17,7 @@ import styles from "@/components/about/about.module.scss";
 import { person, about, social } from "@/app/resources/content";
 import React from "react";
 import { Meta, Schema } from "@/once-ui/modules";
+import { opacity, SpacingToken } from "@/once-ui/types";
 
 export async function generateMetadata() {
   return Meta.generate({
