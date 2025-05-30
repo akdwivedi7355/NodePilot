@@ -145,7 +145,7 @@ const about = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
@@ -185,6 +185,7 @@ const about = {
 };
 
 const blog = {
+  display: false,
   path: "/blog",
   label: "Blog",
   title: "Writing about design and tech...",

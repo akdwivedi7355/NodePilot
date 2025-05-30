@@ -1,5 +1,6 @@
 import {
   Avatar,
+  Background,
   Button,
   Column,
   Flex,
@@ -10,7 +11,7 @@ import {
   Tag,
   Text,
 } from "@/once-ui/components";
-import { baseURL } from "@/app/resources";
+import { baseURL, mailchimp } from "@/app/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import { person, about, social } from "@/app/resources/content";
@@ -51,6 +52,8 @@ export default function About() {
     },
   ];
   return (
+    <>
+    
     <Column maxWidth="m">
       <Schema
         as="webPage"
@@ -78,12 +81,51 @@ export default function About() {
         </Column>
       )}
       <Flex fillWidth mobileDirection="column" horizontal="center">
+      <Background
+        position="absolute"
+        style={{
+          borderRadius: "24px",   // 👈 Rounded corners
+          overflow: "hidden"      // 👈 Ensures inner content stays within curve
+        }}
+        mask={{
+          x: mailchimp.effects.mask.x,
+          y: mailchimp.effects.mask.y,
+          radius: mailchimp.effects.mask.radius,
+          cursor: mailchimp.effects.mask.cursor,
+        }}
+        gradient={{
+          display: mailchimp.effects.gradient.display,
+          opacity: mailchimp.effects.gradient.opacity as opacity,
+          x: mailchimp.effects.gradient.x,
+          y: mailchimp.effects.gradient.y,
+          width: mailchimp.effects.gradient.width,
+          height: mailchimp.effects.gradient.height,
+          tilt: mailchimp.effects.gradient.tilt,
+          colorStart: mailchimp.effects.gradient.colorStart,
+          colorEnd: mailchimp.effects.gradient.colorEnd,
+        }}
+        dots={{
+          display: mailchimp.effects.dots.display,
+          opacity: mailchimp.effects.dots.opacity as opacity,
+          size: mailchimp.effects.dots.size as SpacingToken,
+          color: mailchimp.effects.dots.color,
+        }}
+        lines={{
+          display: mailchimp.effects.lines.display,
+          opacity: mailchimp.effects.lines.opacity as opacity,
+          size: mailchimp.effects.lines.size as SpacingToken,
+          thickness: mailchimp.effects.lines.thickness,
+          angle: mailchimp.effects.lines.angle,
+          color: mailchimp.effects.lines.color,
+        }}
+      />
         {about.avatar.display && (
           <Column
             className={styles.avatar}
             position="sticky"
             minWidth="160"
             paddingX="l"
+            paddingTop="xl"
             paddingBottom="xl"
             gap="m"
             flex={3}
@@ -317,5 +359,6 @@ export default function About() {
         </Column>
       </Flex>
     </Column>
+    </>
   );
 }

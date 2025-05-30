@@ -15,7 +15,7 @@ type ThemeProviderState = {
 };
 
 const initialState: ThemeProviderState = {
-  theme: "system",
+  theme: "dark", // Changed from "system"
   resolvedTheme: 'dark',
   setTheme: () => null,
 };
@@ -23,21 +23,18 @@ const initialState: ThemeProviderState = {
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  // Start with system theme on server, will be updated on client
-  const [theme, setTheme] = useState<Theme>("system");
+  const [theme, setTheme] = useState<Theme>("dark"); // Default to dark
   const [resolvedTheme, setResolvedTheme] = useState<'light' | 'dark'>('dark');
   const [mounted, setMounted] = useState(false);
 
   // Initialize theme from localStorage on mount
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as Theme;
-    if (savedTheme) {
-      setTheme(savedTheme);
-    }
+    const savedTheme = localStorage.getItem('theme') as Theme | null;
+    setTheme(savedTheme ?? 'dark'); // Fallback to dark
     setMounted(true);
   }, []);
 
-  // Update resolvedTheme when theme changes
+  // Update resolvedTheme and HTML attribute
   useEffect(() => {
     if (!mounted) return;
 
@@ -58,15 +55,16 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
 
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = (e: MediaQueryListEvent) => {
-      setResolvedTheme(e.matches ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      const newTheme = e.matches ? 'dark' : 'light';
+      setResolvedTheme(newTheme);
+      document.documentElement.setAttribute('data-theme', newTheme);
     };
 
     mediaQuery.addEventListener('change', handleChange);
     return () => mediaQuery.removeEventListener('change', handleChange);
   }, [theme, mounted]);
 
-  const value = {
+  const value: ThemeProviderState = {
     theme,
     resolvedTheme,
     setTheme: (newTheme: Theme) => {
@@ -78,12 +76,8 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   return <ThemeProviderContext.Provider value={value}>{children}</ThemeProviderContext.Provider>;
 }
 
-export const useTheme = () => {
+export const useTheme = (p0: string) => {
   const context = useContext(ThemeProviderContext);
-
-  if (context === undefined) {
-    throw new Error("useTheme must be used within a ThemeProvider");
-  }
-
+  if (!context) throw new Error("useTheme must be used within a ThemeProvider");
   return context;
 };
