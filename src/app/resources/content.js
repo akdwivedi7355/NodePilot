@@ -56,9 +56,9 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <> Hello, I'm {person.firstName}. 
-  <br />
-  A {person.role} from {person.locationaName}.</>,
+  headline: <> Hello, I'm {person.firstName}.
+    <br />
+    A {person.role} from {person.locationaName}.</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
@@ -94,9 +94,11 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Versatile and detail-oriented software developer with strong expertise in Node.js, React.js, React Native, and MongoDB.
+        Skilled in building high-performance, secure full-stack web and mobile applications with seamless API integration and
+        real-time capabilities. Adept at developing cross-platform solutions, optimizing system architecture, and collaborating in
+        agile environments. Committed to delivering reliable, user-focused software through clean code, scalable design, and
+        continuous improvement.
       </>
     ),
   },
@@ -110,12 +112,20 @@ const about = {
         role: "Software Developer Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            • Back-End Development with Node.js: Engineered scalable, high-performance APIs using Node.js and Express.js,
+            supporting robust data handling and real-time operations across multiple platforms.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            • Cross-Platform Native Applications: Developed and deployed native mobile applications with seamless system
+            integration, enhancing platform performance and user experience.
+          </>,
+          <>
+            • Database Architecture: Designed and optimized relational databases (MSSQL, MySQL) to support secure, efficient,
+            real-time operations across multiple platforms.
+          </>,
+          <>
+            • MERN Stack Implementation: Built full-stack solutions integrating React.js with Node.js back-end services, enabling
+            real-time camera feed monitoring and interactive dashboards.
           </>,
         ],
         images: [
